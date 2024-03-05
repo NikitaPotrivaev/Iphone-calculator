@@ -1,0 +1,109 @@
+.calc {
+    margin: 50px auto;
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    background: #000;
+    color: #fff;
+    font-family: Arial;
+    padding: 18px;
+    box-shadow: 4px 4px 4px #4f4f4f;
+}
+
+.calc__screen {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 125px;
+    padding: 10px;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+    margin-bottom: 25px;
+}
+
+.calc__screen p {
+    text-align: right;
+    font-size: 4rem;
+    max-width: 274px;
+    margin: 0;
+}
+
+.buttons {
+    display: grid;
+    grid-template-areas:
+    "ac plus-minus percent division"
+    "seven eight nine multyply"
+    "four five six minus"
+    "one two three plus"
+    "zero zero dot equal";
+    grid-gap: 7px;
+    justify-items: center;
+}
+
+.button {
+    width: 60px;
+    height: 60px;
+    background: #333;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.button.zero {
+    grid-area: zero;
+    width: 100%;
+    border-radius: 34px;
+    text-indent: -50%;
+}
+
+.division {
+    font-size: 40px;
+}
+
+.multyply {
+    font-size: 40px;
+}
+
+.minus {
+    font-size: 40px;
+}
+
+.plus {
+    font-size: 40px;
+}
+
+.equal {
+    font-size: 40px;
+}
+
+.percent {
+    color: #000;
+}
+
+.plus-minus {
+    color: #000;
+}
+
+.ac {
+    color: #000;
+}
+
+.button:hover {
+    filter: brightness(120%);
+}
+
+.button:active {
+    filter: brightness(90%);
+}
+
+.button.bg-grey {
+    background: #a6a6a6;
+}
+
+.button.bg-orange {
+    background: #ff9501;
+}
