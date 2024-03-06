@@ -51,6 +51,8 @@
     font-size: 1.5rem;
     cursor: pointer;
     user-select: none;
+    border: none;
+    color: inherit;
 }
 
 .button.zero {
@@ -106,4 +108,14 @@
 
 .button.bg-orange {
     background: #ff9501;
+}
+
+.button.equal {
+    background: #ff9501;
+}
+
+.button.bg-orange:focus {
+    transition: all linear .3s ;
+    color: #ff9501;
+    background: #ffff;
 }

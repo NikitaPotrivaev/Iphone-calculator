@@ -42,9 +42,14 @@ document.querySelector('.buttons').onclick = (e) => {
     }
 
     if (action.includes(key)) {
-        sign = key;
-        out.textContent = a;
-        return;
+        if (a === '') {
+            sign = key
+            out.textContent = '0'
+        } else {
+            sign = key;
+            out.textContent = a;
+            return;
+        }
     }
 
     if (key === '=') {
