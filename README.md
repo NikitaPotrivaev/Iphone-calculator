@@ -1,6 +1,7 @@
 # Калькулятор
-
-<img src="./images/calc.png">
+<div align="center">
+  <img src="./images/calc.png">
+</div>
 
 ---
 ### Обзор:
